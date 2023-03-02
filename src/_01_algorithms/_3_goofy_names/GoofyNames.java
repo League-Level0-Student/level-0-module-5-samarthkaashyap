@@ -20,20 +20,28 @@ System.out.println(name.toUpperCase());
 
 				// 4. Create a char variable to store the next character of the name
 				//    use .charAt()
-	
+	for (int x=0; x<name.length(); x++) {
 				
 				// 5. Use MODULO operator (%) to identify if it is an EVEN or ODD character.
 			
-			
+			 char c = name.charAt(x);
+			 if (x%2 ==0) {
+				 c=Character.toUpperCase(c);
+			 }
+			 if(x%2==1) {
+				 c=Character.toLowerCase(c);
+			 }
+			 
 				// 6. Even characters should be made uppercase and odd characters made lowercase
 				//    HINT: use Character.toUpperCase() or Character.toLowerCase()
 	
 			
 				// 7. ADD the char to the end of the goofyName String
-
+goofyName = goofyName + c; 
 		
 		// 8. Use pop-up to show user their Goofy name
 
 	}
+	JOptionPane.showMessageDialog(null, "Hi "+goofyName);
 }
-
+}
