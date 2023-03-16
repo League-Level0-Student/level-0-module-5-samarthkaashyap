@@ -42,6 +42,7 @@ public class AmazingRings extends PApplet {
 
     PImage waldo;
     int x = 150;
+    int x2 = 850;
 	 int y = 250;
 	 int speed = 10;
     @Override
@@ -75,7 +76,20 @@ noFill();
     if(x>=1000 || x<= 0) {
     	speed = -1 * speed;
     }
+    size1 = 250;
+    for (int c =1; c<9; c++) {
+    	if(c%2 == 0) {
+    		fill(255,255,255);
+    	}
+    	else {
+    		fill(0,0,0);
+    	}
+    	ellipse(x2, y, size1, size1);
+    	size1=size1-31;
+    	}
+    x2=x2-speed;
     }
+    
     
     static public void main(String[] args) {
         PApplet.main(AmazingRings.class.getName());
