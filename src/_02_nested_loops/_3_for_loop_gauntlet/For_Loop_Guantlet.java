@@ -39,17 +39,41 @@ public static void main(String[] args) {
 	System.out.println(x + " I was " + (x-2009) + " years old" );
 }
 */
-	for (int x = 0; x<=2; x++) {
-		
+/*	for (int x = 0; x<=2; x++) {
+	for(int y = 0; y<=2; y++){
+	System.out.println(x + " " + y);
 	}
 	
+	}	
+*/
+	/*
+	int x = 0;
+for ( x =1; x<=7; x+=3) {
+	for (int y = 0; y<=2; y++) {
+		System.out.print(x+y + " ");
+		
+	}
+	System.out.println();
+}
+*/	
+	/*
+for (int x =1; x<=100; x+=10) {
+	for(int y = 0; y<=9; y++) {
+		System.out.print(x+y + " ");
+	}
+	System.out.println();
+}
+*/
+	/*
+	int x = 0;
+for (x = 1; x<=6; x++) {
+	for(int y = 0; y<x; y++) {
+		System.out.print("* ");
+	}
+	System.out.println();
+}
 	
-	
-	
-	
-	
-	
-	
+*/	
 	
 	
 	
