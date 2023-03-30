@@ -75,7 +75,9 @@ for (x = 1; x<=6; x++) {
 	
 */	
 	
-	
+for (int i =0; i>=-100; i--) {
+	System.out.println(i+100);
+}
 	
 	
 	
