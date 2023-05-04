@@ -14,20 +14,30 @@ public class Code4Life {
 	 * If you are not sure, ask your teacher 
 	 * *****************/
 	static boolean canPlaySounds = true;
+	public static void main(String[] args) {
+		
 	
 	
 	// 1. Ask the user how many hours they spent coding this week.
-
+String input = JOptionPane.showInputDialog("How many hours did you code this week?");
 	// 2. If it is less than or equal to 2, tell them to stop watching YouTube and
 	// write code instead.
-
+int number = Integer.parseInt(input);
+if (number<=2) {
+	System.out.println("Stop Watching youtube and write code instead.");
+}
 	// 3. If it is greater than or equal to 3 AND less than or equal to 5, tell them
 	// they're a Code Ninja
-
+if (number>=3 && number<=5) {
+	System.out.println("you are a code Ninja");
+}
 	// 4. If it is more than 5, call the playBatmanTheme  method, then 
 	//    call the displayBatman method.
-
-
+if (number>5) {
+	playBatmanTheme();
+	displayBatman();
+}
+	}
 
 	
 	private static void playBatmanTheme() {
@@ -35,7 +45,7 @@ public class Code4Life {
 	//	     Then put batman.wav into the "_2_code_4_life" project
 	//       If you want to play a different audio, change the file name in the code below.
 		if (canPlaySounds) {		
-			File sound = new File("src/_04_practice/_2_code_4_life/batman.wav");
+			File sound = new File("src/_04_practice/_2_code_4_life/batman(2).wav");
 			if (sound.exists()) {
 				new Thread(() -> {
 				try {
